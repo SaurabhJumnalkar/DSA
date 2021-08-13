@@ -2,6 +2,7 @@
 using namespace std;
 
 int main(){
+    //array declaration
     int arr[6]={12,45,23,51,19,8};
     int n=sizeof(arr)/sizeof(arr[0]);
     int key,j;
