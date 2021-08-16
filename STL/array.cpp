@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 #include<array>
-
 int main(){
     array<int,6> a={1,2,3,4,5,6}; //static,sequential,only one datatype in whole array
     cout<<a[1]<<endl;
