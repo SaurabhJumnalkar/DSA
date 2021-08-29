@@ -11,21 +11,21 @@ int main(){
     int arr[]={2,3,5,6,5,3,4,1};
     int n=sizeof(arr)/sizeof(arr[0]);
     
-    //0(n^2) TC
-    // int cur,curi,min,counter=0;
-    // for(int i=0;i<n;i++){
-    //     cur=arr[i];
-    //     curi=i;
-    //     for(int j=i+1;j<n;j++){
-    //         if(cur==arr[j]){
-    //                 counter++;
-    //                 if(counter==1){
-    //                     min=curi;
-    //                 }
-    //         }
-    //     }
-    // }
-    // cout<<min+1;
+    // 0(n^2) TC
+    int cur,curi,min,counter=0;
+    for(int i=0;i<n;i++){
+        cur=arr[i];
+        curi=i;
+        for(int j=i+1;j<n;j++){
+            if(cur==arr[j]){
+                    counter++;
+                    if(counter==1){
+                        min=curi;
+                    }
+            }
+        }
+    }
+    cout<<min+1;
 
-    
+
 }
