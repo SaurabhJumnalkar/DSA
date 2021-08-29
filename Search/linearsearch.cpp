@@ -2,6 +2,7 @@
 using namespace std;
 
 int ls(int arr[],int key,int n){
+    if(n==0){return -1;}
     
     for(int i=0;i<n;i++){
         if(key==arr[i]){
