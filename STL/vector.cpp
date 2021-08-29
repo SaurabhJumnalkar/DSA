@@ -10,7 +10,6 @@ int main()
     //op:0
     cout<<a.capacity()<<endl;  //return memory size of a
     //op:0
-
     a.push_back(151);   //Adds one element 151 into vector
     a.push_back(345);     // Adds 2nd element 345 into a
     a.push_back(2156);
