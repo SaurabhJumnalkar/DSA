@@ -82,16 +82,30 @@ int searchin(node* head,int key){
     }
     return -1;
 }
+node* reverselinkedlist(node* head){
+    node* previous=NULL;
+    node* current=head;
+    node* nexxt;
+    while(current!=NULL){
+        nexxt=current->next;
+        current->next=previous;
+        previous=current;
+        current=nexxt;
+        
+    }
 
+    return previous;
+}
 int main(){
     node* head=NULL;
     insertAttail(head,2);
     insertAttail(head,3);
     insertAttail(head,4);
-    deletion(head,2);
+    deletion(head,4);
     insertAtStart(head,10);
     display(head);
-    cout<<endl<<searchin(head,1);
-
+    cout<<endl<<searchin(head,1)<<endl;
+    node* newhead=reverselinkedlist(head);
+    display(newhead);
     return 0;
 }
